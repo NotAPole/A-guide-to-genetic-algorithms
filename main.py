@@ -1,26 +1,6 @@
 import random
 import numpy as np
 
-"""
-README
-------------------------------------------------------------------------------------------------------------------------
-This is my script for the Travelling Salesman Problem.
-In order to configure your test, change the fileName variable to whichever of the two you would like,
-set the population size, swap rate and maximum number of generations (called iterations).
-You can also play around with the stuck tolerance and stuck swap rate, but after my testing the current values are
-working well. (Tolerance: 40, stuck swap rate: 70).
-In my documentation I document how I found that a population size of 236 and a swap rate of 2 percent was the most 
-consistent in getting low cost in a small timespan.
-All parameters you need to change are in the if-statement at the bottom at this script.
-------------------------------------------------------------------------------------------------------------------------
-README
-"""
-
-cityDict = {}
-travelRouteDictionary = {}
-x_points = []
-y_points = []
-
 
 def setupCombination(populationNumber, geneSize, possibleValues):
     population = {}
